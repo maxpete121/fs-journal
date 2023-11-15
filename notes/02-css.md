@@ -39,7 +39,13 @@ space evenly - moves all effected elements into the free space around the main e
 
 Align items y axis
 
-
+RESIZE A BACKGROUND
+ADD an image
+.anyclass {
+    background-image: url(example.com)
+    height: 80
+    background-size: cover;
+}
 
 CALL TO CLASS .example
 CALL TO AN ID #example
