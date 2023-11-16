@@ -38,6 +38,11 @@ class="image-fluid"
 size an image manually
 class="w-50"
 
+Set background to transparent
+class="bs-bg-opacity: 5"
+
+
+
 Display flex for boot
 class="d-flex flex-column align items center"
 
@@ -48,16 +53,32 @@ text-center
  type script
  put class debug on element that needs it
 
+ Size an image to its original
+ class="object-fit-contain"
+
+dissaper on screen resize
+
+class="row d-none d-md-flex"
+
+REsize elements on page resize
+class="col-12 col-md-7"
+
+ORDER THINGS ON A PAGE
+Parent class: class="order 1 order-md-0"
+
+class="col-12 order 0"
+class="col-6 order 1"
+
 Round an image
-<section class="r
+<section class="round">
 Basic Setup
- <section class="container bg success">
+ <section class="container">
    container
-   <section class="container-fluid">
+   <section class="container-fluid bg-white">
 <div class="Row">
    <section class="column"><section>
    <div>
-adding a number will space the colums
+adding a number will space the columns
  <section class="col-6 bg primary">
  bg -- primary
        secondary
