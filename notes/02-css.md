@@ -105,4 +105,19 @@ height will do the same as width but horizontaly
  margin-top or bottom
  padding-top or bottom
 
+Position tools
+ position absolute pulls an element from its original box
+ position relative creates a box around that element 
 
+ hover is a state for a css element that can be applied to elements 
+ example 
+
+offset card with margin to space other items correctly
+.bg-croc-primary
+.bg-croc-primary: hover
+
+change a card with css by condition. You may put other classes inside media tool
+example
+@media (max-width: 780px) {
+    css display types
+}

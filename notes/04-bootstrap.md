@@ -29,6 +29,31 @@ Button or change button
 Title Tag will display title when mouse hovers over element
 <section title="keep it simple stupid">
 
+hide elements
+d-md-none = hidden
+d-lg-block = visible
+
+change a card w
+
+BREAKING DOWN COLUMNS
+nest a row inside of a column to break the original row into multiple sections
+ 
+Price slider
+<input name="price" type="range" class="form-range">
+
+Hold an element in place on the page
+will stop the element at the top of the page
+<form class="sticky-top">
+In style css use top, 100px; ect. to hold the element below the top of the page
+
+form control
+<select name="size" class="form-control">
+ <option value="">small</option>
+</select>
+
+check box
+<div class="form-check-label"><input type="checkbox" class="form-checkbox">checkbox title</div>
+
 Offset column from side of the screen
 <section class="column offset-1">
 
@@ -57,6 +82,9 @@ text-center
  class="object-fit-contain"
 
 dissaper on screen resize
+example
+d-md-block
+d-lg-none
 
 class="row d-none d-md-flex"
 
@@ -65,7 +93,7 @@ class="col-12 col-md-7"
 
 ORDER THINGS ON A PAGE
 Parent class: class="order 1 order-md-0"
-
+ 
 class="col-12 order 0"
 class="col-6 order 1"
 
@@ -100,3 +128,4 @@ p-1
 p-2
 ect.
 
+  

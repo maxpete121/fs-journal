@@ -2,5 +2,5 @@
 
 * **[Repo](https://github.com/maxpete121/fs-journal)**
 * **[Repo](https://github.com/maxpete121/PetShop)**
-* **[Repo](https://github.com/maxpete121/<ASSIGNMENT_REPO>)**
-* **[Repo](https://github.com/maxpete121/<ASSIGNMENT_REPO>)**
+* **[Repo](https://github.com/maxpete121/Clone-Website)**
+* **[Repo](https://github.com/ItsBup/BandClone)**
