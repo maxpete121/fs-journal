@@ -33,3 +33,21 @@ a function is a set of instructions
 function hello() {
     console.log('Hello')
 }
+
+
+let catArr = [
+    {
+        name:bill,
+        Weight: 10
+    },
+    {
+        name: phill,
+        weight: 11,
+    }
+]
+
+access array items
+console.log(catArr[i])
+console.log(catArr.length)
+
+for(let i = 0; i < catArr.length)
