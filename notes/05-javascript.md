@@ -51,3 +51,35 @@ console.log(catArr[i])
 console.log(catArr.length)
 
 for(let i = 0; i < catArr.length)
+
+animals.foreach(lamdaFunction =>)
+
+fire a function automaticly. functions for interval dont nee their () because setInterval is it's own function
+
+setInterval(function, 1)
+
+grab element by its class. needs a heros.forEach.(hero) if changing multiple heros
+let test = document.getElementById(the id)
+
+now we select the class inside test
+let done = test.querrySelector('.class')
+
+Next we have to draw these changes to the page
+test.innerText = ${hero.name} | ${hero.health} | 
+
+make objects move with html
+marquee behavior = "alternate" direction= "left"
+
+setTimeout calls a function once after a delay
+setTimeout(animal => {
+    function or code you need ran
+}, 500)
+
+save a score to local storage
+let highScore = localStorage.getItem() pulls things out of local storage
+localStorage.setItem('your highScore', highscore) sets something into local storage
+
+if pull from local storage isnt a number and is stuck as a string then us
+let highScore = parsInt(localStorage.getItem()) pulls things out of local storage
+localStorage.setItem('your highScore', highscore) sets something into local storage
+

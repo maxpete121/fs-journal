@@ -121,3 +121,9 @@ example
 @media (max-width: 780px) {
     css display types
 }
+
+make a border
+outline: 5px solid black
+
+make shadow 
+filter: srop-shadow (0px 0px 3px 3px black)
