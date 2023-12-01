@@ -17,7 +17,7 @@
     let fruit = ['apple', 'banana', 'pineapple', 'orange', 'strawberry']
     ```
 
-    > | fruit.pineapple |
+    > | fruit[2] |
 
 05. Given these two objects: How could you add each to the others friends arrays?
 
@@ -34,12 +34,16 @@
     }
     ```
 
-    > | ANSWER HERE |
+    > |let nameOne = you.find(your => your.name) |
+    let nameTwo = them.find(their => theirName)
+    nameOne = them.friends
+    nameTwo = you.friends
 
 06. Give an example of a JavaScript `Conditional`:
 
     > | if(hats > 0){
-        let hats = heads
+        let heads = hats
+        console.log(heads)
     } |
 
 07. What is the main difference between `parameters` and `arguments`?
@@ -53,7 +57,7 @@
 
 09. What is the difference between a `primitive` value and a `reference` value?
 
-    > | ANSWER HERE |
+    > | A data type built into javascript that isnt an object and has no methods or properties |
 
 10. Demonstrate a loop that prints the numbers between -100 and 100?
 
