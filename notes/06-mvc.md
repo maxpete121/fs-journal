@@ -144,5 +144,30 @@ loadCars(){
 }
 
 
+forms
+
+createNewCase(){}
+event.target will grab form
+const form = event.target
+this makes form take on the form in full
+const formData = getFormData(form)
+this lets formData get the data from the form we made just above
+caseFileService.createCaseFile(formData)
+this links this function to its other half in the service
+
+in the service
+
+createNewCase(formData){
+    const newCaseFile = new CaseFile(formData)
+
+    appState.casefiles.push(newCaseFile)
+    this pushes the form file you made into your appState to become a new object
+}
+
+
+${this.locked} ? ${this.LockedCaseFiled} : ${this.unlockCaseFile}
+this will look at the true false. if its true it will draw the first option. If false it will draw the second item given
+
+
 
 
