@@ -171,3 +171,103 @@ this will look at the true false. if its true it will draw the first option. If 
 
 
 
+
+
+API Section
+MODEL
+export Monster{
+    constructor(data){
+        this.name = data.name
+        this.image = data.image
+    }
+}
+
+? says if this exists then do this| : says if not then do this instead
+${this.name ? this.name : 'no name'}
+
+  This happens in the service because it is changing the data
+  this is all under a getAPI function you make
+an api is just a database of information to pull from
+    fetch(URL To Use) fetch is built in to use a url and retrieve the information behind it
+
+To save info
+    let response = fetch(URL to use) this makes response the data that you pulled from the fetch
+
+the response takes to long to come back to the page so you have to set the fetch to wait
+    let response = await fetch(URL to use)
+    console.log(response)
+this will force the code to complete before it starts on the next line
+this is how to fetch it and make our data readable. 
+    let body = await response.json
+    console.log(body)
+map takes an array and creates a copy of it in the format you want to change it to
+this is telling it to create a new monster using the monster data by matching it to your model for the object
+   let monsters = body.data.map(monster => new Monster(monster)) when declaring new use the name of your model to attach them
+now save the info to the appstate array
+   appstate.monsters = monsters
+USE AN EMITTER TO DRAW CARDS AS GRABBING THE API TAKES TOO LONG FOR THE DRAW TO WORK
+   AppState.on('monsters',AppState.monsters)
+   
+
+
+
+
+
+   The env stores information staticly that the site will have to use later
+   tokens are used to tell an api your allowed to access the data, Tokens expire after an amount of time
+
+   USING A FORM TO PUSH DATA TO AN API
+CONTROLLER
+   createCars(){
+   const form = event.target
+   const formData = getFormData(form)
+   carsService.sameFunction(formData)
+   }
+
+SERVICE
+   createCars(formData){
+    const response await api.post('api/Cars', formData)
+    const newCar = new Car(response.data)
+    appstate.cars.push(newCar)
+    This will fire off your emitter in the controller
+   }
+above the api body in the api function
+   const axiosResponse = await api.get('api/cars')
+
+USE A TRY CATCH TO MAKE THE FORM DISSAPEAR WHEN LOGGED OUT
+IN THE CONTROLLER:
+USE ASYNC AND PUT AN AWAIT BEFORE TELLING SERVICE "await carsService.samefunction(formData)
+try{
+    put entire create function for form in here
+    form.reset()
+}catch(error){
+    console.error(error)
+    Pop.toast(error.message)
+}
+
+Make form display none
+add an id to the form
+create a show form function
+attach a listener to user and when user changes fire the showForm
+wrap show form contents in an if(appState.User)
+showForm(){
+    let form = document.getElementById('form-id')
+    form.classList.remove('d-none')
+}
+
+for delete request
+async deleteFunction(){
+    const response = await api.delete('api/cars/${carId}')
+}
+
+
+
+   
+
+
+
+
+
+
+
+
