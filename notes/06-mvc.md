@@ -259,7 +259,22 @@ for delete request
 async deleteFunction(){
     const response = await api.delete('api/cars/${carId}')
 }
+@type {name: string, damage: number, url: string}
 
+using the api tool
+
+const dndApi = axios.create({
+    baseUrl: 'yourUrl'
+})
+
+class testClass{
+    getSpells(){
+        const response = dndApi.get('spells')
+    }
+}
+
+
+using static in front of a new function in your model will make it so it isnt part of thr class its in
 
 
    
