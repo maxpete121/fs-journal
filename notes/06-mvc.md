@@ -277,6 +277,8 @@ class testClass{
 using static in front of a new function in your model will make it so it isnt part of thr class its in
 
 
+
+
    
 
 
