@@ -236,7 +236,7 @@ above the api body in the api function
 
 USE A TRY CATCH TO MAKE THE FORM DISSAPEAR WHEN LOGGED OUT
 IN THE CONTROLLER:
-USE ASYNC AND PUT AN AWAIT BEFORE TELLING SERVICE "await carsService.samefunction(formData)
+USE ASYNC AND PUT AN AWAIT BEFORE TELLING SERVICE "await carsService.sameFunction(formData)
 try{
     put entire create function for form in here
     form.reset()
@@ -274,7 +274,8 @@ class testClass{
 }
 
 
-using static in front of a new function in your model will make it so it isnt part of thr class its in
+using static in front of a new function in your model will make it accessible
+
 
 
 

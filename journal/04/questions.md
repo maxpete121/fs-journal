@@ -21,7 +21,7 @@
 
 06. Name three processes used to make requests over `HTTP`?
 
-  > | ANSWER HERE |
+  > | get(), post(), fetch() |
 
 07. What does the `API` acronym stand for?
 
