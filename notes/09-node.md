@@ -84,6 +84,10 @@ async getCar(request, response, next){
     response.send(car)
 }
 
+async removeCar(request, response, next){
+    const carRemove = await carService.removeCar(carId)
+}
+
 
 class CarService{
     makeCar(carData){
@@ -94,4 +98,13 @@ class CarService{
 
 async getCar(){
     const cars = await dbContext.Cars.Find()
+}
+
+async removeCar(carId){
+    const carRemove = await dbContext.Cars.findById(carId)
+    if(!carRemove){
+        throw new Error('Cant find car at ${carId}')
+    }
+    await carRemove.remove()
+    return `${carRemove.make}, ${carRemove.model} was removed`
 }
