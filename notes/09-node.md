@@ -37,3 +37,61 @@ export class CatsController extends BaseController{
 }
 
 console.logs will show up in your vscode console
+
+IN SERVICE
+const fakeDB ={
+    cats =
+    {name: 'Jimmy', color: 'orange', emoji: '🐈'}
+}
+
+getCats(){
+
+}
+
+POST
+
+createCat(request, response, next){
+    const payload = request.body
+}
+
+
+
+
+data model
+export const CarSchema = new Schema({
+    make:{type: String, maxLength: 25, required: true}
+    model:{type: String, maxLength: 50, required: true}
+    year:{type: Number, min: 1920, max: 2024, required: true}
+    price:{type: Number, min: 0, required: true}
+    description:{type: String, max: 1000},
+    imgUrl:{type: String, maxLength: 500, required: true}
+    engineType:{type: String, required: True, default: 'unknown', enum: ['two-cylinder', 'unknown']}
+})
+
+DBContext
+Cars = mongoose.model('Cars', CarSchema)
+
+class CarController{
+    makeCar(){
+    const carDAta = request.body
+    const car = await carService.makeCar(carData)
+    response.send(car)
+    }
+}
+
+async getCar(request, response, next){
+    const car = await carService.getCar()
+    response.send(car)
+}
+
+
+class CarService{
+    makeCar(carData){
+        const car = await dbContext.Cars.create(carData)
+        return car
+    }
+}
+
+async getCar(){
+    const cars = await dbContext.Cars.Find()
+}
