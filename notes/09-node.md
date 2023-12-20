@@ -108,3 +108,24 @@ async removeCar(carId){
     await carRemove.remove()
     return `${carRemove.make}, ${carRemove.model} was removed`
 }
+
+
+ToJson: virtual
+.populate calls to the virtual and tells it to fill with the exhibits
+final step to attaching two data sets together
+
+HOOK UP AUTH 0
+put domain in the env domain section
+along with client id
+and audience
+
+get auth token
+
+open token, open preview, copy token
+under auth tab in spaceman paste token into bearer token
+
+when creating middleware
+.use(Auth0Provider.getAuthorizedUserInfo)
+
+in middleware
+const userInfo = request.userInfo
