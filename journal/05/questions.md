@@ -29,12 +29,12 @@
 
 08. The ______ pipeline delivers information from the client while the ______ pipeline returns it. Fill in the blanks. 
 
-  > | CI/CD |
+  > | response, request |
 
 09. Demonstrate the pattern that is used to include a request query with the client's `HTTP` request providing the property `tag` and the value `winter`.
 
-  > | ANSWER HERE |
+  > | /tag/:winter |
 
 10. What is a ***virtual property***?
 
-  > | ANSWER HERE |
+  > | A sort of window from one schema to another linking information together when an object is requested or when using .get |
